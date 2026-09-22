@@ -15,6 +15,13 @@
 			},
 			"inputs": [
 				{
+					"id": "6CgvydiEtInkUTgy",
+					"source_id": "79bf9032-5cff-4038-b2b8-8a24fa098e3b",
+					"type": "dataset",
+					"name": "allen_mouse_ccf",
+					"source_path": "allen_mouse_ccf/"
+				},
+				{
 					"id": "Xe7Ilm6dm0GnUav5",
 					"source_id": "725d783a-a2df-4c64-a5d8-cdc0f35afd3a",
 					"type": "dataset",
@@ -67,6 +74,13 @@
 				"memory": 128
 			},
 			"inputs": [
+				{
+					"id": "vuDTAPOXsnebsuUa",
+					"source_id": "83909dcc-1e88-4816-b247-63f6d0218eff",
+					"type": "dataset",
+					"name": "Fiji-builds",
+					"source_path": "Fiji-builds/"
+				},
 				{
 					"id": "iBUq8Yyb6UKKVDHU",
 					"source_id": "capsule_exaspim_swc_transform_capsule_1",
