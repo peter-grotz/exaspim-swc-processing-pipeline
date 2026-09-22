@@ -1,0 +1,17 @@
+# PARKED -- rename to release.yml when this repo moves to AllenNeuralDynamics.
+#
+# AIND's reusable workflow lives in AllenNeuralDynamics/.github, which a personal
+# account cannot call. GitHub resolves the `uses:` reference before it evaluates any
+# job-level `if`, so a guard does not help -- every push to main fails at startup.
+# The file is kept verbatim so the move is a rename.
+
+name: Tag and publish
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release:
+    uses: AllenNeuralDynamics/.github/.github/workflows/release-tag-and-publish-pipeline.yml@main
