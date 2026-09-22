@@ -19,21 +19,24 @@
 					"source_id": "79bf9032-5cff-4038-b2b8-8a24fa098e3b",
 					"type": "dataset",
 					"name": "allen_mouse_ccf",
-					"source_path": "allen_mouse_ccf/"
+					"source_path": "allen_mouse_ccf/",
+					"collect": true
 				},
 				{
 					"id": "Xe7Ilm6dm0GnUav5",
 					"source_id": "725d783a-a2df-4c64-a5d8-cdc0f35afd3a",
 					"type": "dataset",
 					"name": "exaspim_template_7subjects_nomask_10um_round6_template_only",
-					"source_path": "exaspim_template_7subjects_nomask_10um_round6_template_only/"
+					"source_path": "exaspim_template_7subjects_nomask_10um_round6_template_only/",
+					"collect": true
 				},
 				{
 					"id": "n2oAo8Q69S7S79Hm",
 					"source_id": "0b22b6d4-5866-4a31-90ad-7be655a32539",
 					"type": "dataset",
 					"name": "reg_exaspim_template_to_ccf_25um_v1.5",
-					"source_path": "reg_exaspim_template_to_ccf_25um_v1.5/"
+					"source_path": "reg_exaspim_template_to_ccf_25um_v1.5/",
+					"collect": true
 				}
 			]
 		},
@@ -79,7 +82,8 @@
 					"source_id": "83909dcc-1e88-4816-b247-63f6d0218eff",
 					"type": "dataset",
 					"name": "Fiji-builds",
-					"source_path": "Fiji-builds/"
+					"source_path": "Fiji-builds/",
+					"collect": true
 				},
 				{
 					"id": "iBUq8Yyb6UKKVDHU",

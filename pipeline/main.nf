@@ -1,5 +1,5 @@
 #!/usr/bin/env nextflow
-// hash:sha256:35c70daf62dc7cefbd8e37a6c6aa1962c32aa0801ab98208157770cacbe3b2fb
+// hash:sha256:740793c2849e425073f7fa0c38480c76a7291e9171e7c92f70f14bfcadb6e3e7
 
 // capsule - exaspim-swc-transform
 process capsule_exaspim_swc_transform_capsule_1 {
@@ -9,13 +9,8 @@ process capsule_exaspim_swc_transform_capsule_1 {
 	cpus 16
 	memory '120 GB'
 
-	input:
-	val path1
-	val path2
-	val path3
-
 	output:
-	path 'capsule/results/*', emit: to_capsule_exaspim_swc_resample_3_6
+	path 'capsule/results/*', emit: to_capsule_exaspim_swc_resample_3_2
 
 	script:
 	"""
@@ -31,9 +26,9 @@ process capsule_exaspim_swc_transform_capsule_1 {
 	mkdir -p capsule/results && ln -s \$PWD/capsule/results /results
 	mkdir -p capsule/scratch && ln -s \$PWD/capsule/scratch /scratch
 
-	ln -s "/tmp/data/allen_mouse_ccf/$path1" "capsule/data/$path1" # id: 79bf9032-5cff-4038-b2b8-8a24fa098e3b
-	ln -s "/tmp/data/exaspim_template_7subjects_nomask_10um_round6_template_only/$path2" "capsule/data/$path2" # id: 725d783a-a2df-4c64-a5d8-cdc0f35afd3a
-	ln -s "/tmp/data/reg_exaspim_template_to_ccf_25um_v1.5/$path3" "capsule/data/$path3" # id: 0b22b6d4-5866-4a31-90ad-7be655a32539
+	ln -s "/tmp/data/allen_mouse_ccf" "capsule/data/allen_mouse_ccf" # id: 79bf9032-5cff-4038-b2b8-8a24fa098e3b
+	ln -s "/tmp/data/exaspim_template_7subjects_nomask_10um_round6_template_only" "capsule/data/exaspim_template_7subjects_nomask_10um_round6_template_only" # id: 725d783a-a2df-4c64-a5d8-cdc0f35afd3a
+	ln -s "/tmp/data/reg_exaspim_template_to_ccf_25um_v1.5" "capsule/data/reg_exaspim_template_to_ccf_25um_v1.5" # id: 0b22b6d4-5866-4a31-90ad-7be655a32539
 
 	echo "[${task.tag}] cloning git repo..."
 	if [[ "\$(printf '%s\n' "2.20.0" "\$(git version | awk '{print \$3}')" | sort -V | head -n1)" = "2.20.0" ]]; then
@@ -62,11 +57,10 @@ process capsule_exaspim_swc_resample_3 {
 	memory '120 GB'
 
 	input:
-	val path5
 	path 'capsule/data/'
 
 	output:
-	path 'capsule/results/*', emit: to_capsule_exaspim_swc_packaging_2_4
+	path 'capsule/results/*', emit: to_capsule_exaspim_swc_packaging_2_1
 
 	script:
 	"""
@@ -82,7 +76,7 @@ process capsule_exaspim_swc_resample_3 {
 	mkdir -p capsule/results && ln -s \$PWD/capsule/results /results
 	mkdir -p capsule/scratch && ln -s \$PWD/capsule/scratch /scratch
 
-	ln -s "/tmp/data/Fiji-builds/$path5" "capsule/data/$path5" # id: 83909dcc-1e88-4816-b247-63f6d0218eff
+	ln -s "/tmp/data/Fiji-builds" "capsule/data/Fiji-builds" # id: 83909dcc-1e88-4816-b247-63f6d0218eff
 
 	echo "[${task.tag}] cloning git repo..."
 	if [[ "\$(printf '%s\n' "2.20.0" "\$(git version | awk '{print \$3}')" | sort -V | head -n1)" = "2.20.0" ]]; then
@@ -151,14 +145,8 @@ process capsule_exaspim_swc_packaging_2 {
 }
 
 workflow {
-	// input data
-	allen_mouse_ccf_to_exaspim_swc_transform_1 = Channel.fromPath("../data/allen_mouse_ccf/*", type: 'any', relative: true)
-	exaspim_template_7subjects_nomask_10um_round6_template_only_to_exaspim_swc_transform_2 = Channel.fromPath("../data/exaspim_template_7subjects_nomask_10um_round6_template_only/*", type: 'any', relative: true)
-	reg_exaspim_template_to_ccf_25um_v1_5_to_exaspim_swc_transform_3 = Channel.fromPath("../data/reg_exaspim_template_to_ccf_25um_v1.5/*", type: 'any', relative: true)
-	fiji_builds_to_exaspim_swc_resample_5 = Channel.fromPath("../data/Fiji-builds/*", type: 'any', relative: true)
-
 	// run processes
-	capsule_exaspim_swc_transform_capsule_1(allen_mouse_ccf_to_exaspim_swc_transform_1, exaspim_template_7subjects_nomask_10um_round6_template_only_to_exaspim_swc_transform_2, reg_exaspim_template_to_ccf_25um_v1_5_to_exaspim_swc_transform_3)
-	capsule_exaspim_swc_resample_3(fiji_builds_to_exaspim_swc_resample_5, capsule_exaspim_swc_transform_capsule_1.out.to_capsule_exaspim_swc_resample_3_6)
-	capsule_exaspim_swc_packaging_2(capsule_exaspim_swc_resample_3.out.to_capsule_exaspim_swc_packaging_2_4)
+	capsule_exaspim_swc_transform_capsule_1()
+	capsule_exaspim_swc_resample_3(capsule_exaspim_swc_transform_capsule_1.out.to_capsule_exaspim_swc_resample_3_2)
+	capsule_exaspim_swc_packaging_2(capsule_exaspim_swc_resample_3.out.to_capsule_exaspim_swc_packaging_2_1)
 }
