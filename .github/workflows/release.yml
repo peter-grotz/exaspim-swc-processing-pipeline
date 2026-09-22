@@ -7,4 +7,9 @@ on:
 
 jobs:
   release:
+    # AIND's reusable workflow lives in AllenNeuralDynamics/.github, which a personal
+    # account cannot call -- the run fails at startup before any job begins. This guard
+    # keeps the workflow dormant until the repo is transferred to the organisation, at
+    # which point it starts working with no edit.
+    if: ${{ github.repository_owner == 'AllenNeuralDynamics' }}
     uses: AllenNeuralDynamics/.github/.github/workflows/release-tag-and-publish-pipeline.yml@main
