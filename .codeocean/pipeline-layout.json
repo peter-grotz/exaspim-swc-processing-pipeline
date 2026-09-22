@@ -34,6 +34,30 @@
 			"id": "xy-edge__83909dcc-1e88-4816-b247-63f6d0218eff-capsule_exaspim_swc_resample_3",
 			"source": "83909dcc-1e88-4816-b247-63f6d0218eff",
 			"target": "capsule_exaspim_swc_resample_3"
+		},
+		{
+			"id": "xy-edge__a07157ab-990e-45d8-8e4c-53ebef2b74df-capsule_exaspim_swc_transform_capsule_1",
+			"selected": false,
+			"source": "a07157ab-990e-45d8-8e4c-53ebef2b74df",
+			"target": "capsule_exaspim_swc_transform_capsule_1"
+		},
+		{
+			"id": "xy-edge__ee48989d-ae51-4d6b-a520-adaf64831bc1-capsule_exaspim_swc_transform_capsule_1",
+			"selected": false,
+			"source": "ee48989d-ae51-4d6b-a520-adaf64831bc1",
+			"target": "capsule_exaspim_swc_transform_capsule_1"
+		},
+		{
+			"id": "xy-edge__90e5a323-b4a9-441e-baea-4f9717cda04f-capsule_exaspim_swc_transform_capsule_1",
+			"selected": false,
+			"source": "90e5a323-b4a9-441e-baea-4f9717cda04f",
+			"target": "capsule_exaspim_swc_transform_capsule_1"
+		},
+		{
+			"id": "xy-edge__f49b1346-e9ef-4201-b49b-a70fc6d12ae9-capsule_exaspim_swc_transform_capsule_1",
+			"selected": false,
+			"source": "f49b1346-e9ef-4201-b49b-a70fc6d12ae9",
+			"target": "capsule_exaspim_swc_transform_capsule_1"
 		}
 	],
 	"nodes": [
@@ -94,8 +118,8 @@
 		{
 			"id": "725d783a-a2df-4c64-a5d8-cdc0f35afd3a",
 			"position": {
-				"x": 994.9899003703481,
-				"y": -75.52127883800456
+				"x": -313.7878611552683,
+				"y": -115.24456552967663
 			},
 			"selected": false,
 			"type": "dataset"
@@ -103,8 +127,8 @@
 		{
 			"id": "79bf9032-5cff-4038-b2b8-8a24fa098e3b",
 			"position": {
-				"x": -143.25871680836585,
-				"y": -153.2876531784869
+				"x": -174.07425601413632,
+				"y": -271.104302099249
 			},
 			"selected": false,
 			"type": "dataset"
@@ -115,14 +139,50 @@
 				"x": 1138.2295862032136,
 				"y": 332.4135318739131
 			},
+			"selected": false,
+			"type": "dataset"
+		},
+		{
+			"id": "a07157ab-990e-45d8-8e4c-53ebef2b74df",
+			"position": {
+				"x": 1235.8107988381603,
+				"y": -257.0537953555737
+			},
+			"selected": false,
+			"type": "dataset"
+		},
+		{
+			"id": "ee48989d-ae51-4d6b-a520-adaf64831bc1",
+			"position": {
+				"x": 1469.969120389069,
+				"y": -254.96309605601203
+			},
+			"selected": false,
+			"type": "dataset"
+		},
+		{
+			"id": "90e5a323-b4a9-441e-baea-4f9717cda04f",
+			"position": {
+				"x": 1922.6490969868987,
+				"y": -247.4483641235553
+			},
 			"selected": true,
+			"type": "dataset"
+		},
+		{
+			"id": "f49b1346-e9ef-4201-b49b-a70fc6d12ae9",
+			"position": {
+				"x": 1690.0431581575413,
+				"y": -250.7539067402887
+			},
+			"selected": false,
 			"type": "dataset"
 		}
 	],
-	"timestamp": 1790098971524,
+	"timestamp": 1790112318682,
 	"viewport": {
-		"x": 468.353690675885,
-		"y": 332.0120639396214,
-		"zoom": 0.39040255935665635
+		"x": 211.9688277186453,
+		"y": 321.7463118772264,
+		"zoom": 0.3
 	}
 }

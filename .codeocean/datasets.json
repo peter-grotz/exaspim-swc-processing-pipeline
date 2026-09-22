@@ -16,6 +16,22 @@
 		{
 			"id": "83909dcc-1e88-4816-b247-63f6d0218eff",
 			"mount": "Fiji-builds"
+		},
+		{
+			"id": "90e5a323-b4a9-441e-baea-4f9717cda04f",
+			"mount": "reg_exaspim_template_to_ccf_25um_v1.1"
+		},
+		{
+			"id": "a07157ab-990e-45d8-8e4c-53ebef2b74df",
+			"mount": "reg_exaspim_template_to_ccf_25um_v1.4"
+		},
+		{
+			"id": "ee48989d-ae51-4d6b-a520-adaf64831bc1",
+			"mount": "reg_exaspim_template_to_ccf_25um_v1.3"
+		},
+		{
+			"id": "f49b1346-e9ef-4201-b49b-a70fc6d12ae9",
+			"mount": "reg_exaspim_template_to_ccf_25um_v1.2"
 		}
 	]
 }

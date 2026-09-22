@@ -15,6 +15,38 @@
 			},
 			"inputs": [
 				{
+					"id": "Pyx4tizPWuVhU6ue",
+					"source_id": "f49b1346-e9ef-4201-b49b-a70fc6d12ae9",
+					"type": "dataset",
+					"name": "reg_exaspim_template_to_ccf_25um_v1.2",
+					"source_path": "reg_exaspim_template_to_ccf_25um_v1.2/",
+					"collect": true
+				},
+				{
+					"id": "rQ2TQM8axuG6iP9W",
+					"source_id": "90e5a323-b4a9-441e-baea-4f9717cda04f",
+					"type": "dataset",
+					"name": "reg_exaspim_template_to_ccf_25um_v1.1",
+					"source_path": "reg_exaspim_template_to_ccf_25um_v1.1/",
+					"collect": true
+				},
+				{
+					"id": "vU9K4vwFQqhHConK",
+					"source_id": "ee48989d-ae51-4d6b-a520-adaf64831bc1",
+					"type": "dataset",
+					"name": "reg_exaspim_template_to_ccf_25um_v1.3",
+					"source_path": "reg_exaspim_template_to_ccf_25um_v1.3/",
+					"collect": true
+				},
+				{
+					"id": "3qCbDPLGHsT3Oa1q",
+					"source_id": "a07157ab-990e-45d8-8e4c-53ebef2b74df",
+					"type": "dataset",
+					"name": "reg_exaspim_template_to_ccf_25um_v1.4",
+					"source_path": "reg_exaspim_template_to_ccf_25um_v1.4/",
+					"collect": true
+				},
+				{
 					"id": "6CgvydiEtInkUTgy",
 					"source_id": "79bf9032-5cff-4038-b2b8-8a24fa098e3b",
 					"type": "dataset",
