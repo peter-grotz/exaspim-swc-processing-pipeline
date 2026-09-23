@@ -7,6 +7,8 @@
 				"id": "cec1b540-f971-4a1c-8e85-60040ece90e4",
 				"name": "exaspim-swc-transform",
 				"slug": "2015425",
+				"commit": "e96b3628223c1b2d171004e2bd091a2b3bbfa77c",
+				"image_tag": "f92e0aed535a21fedaefcf06c2eac4d6",
 				"app_panel": true
 			},
 			"resources": {
@@ -14,14 +16,6 @@
 				"memory": 60
 			},
 			"inputs": [
-				{
-					"id": "cNFfgOpe3G651EhK",
-					"source_id": "ea280d28-cf7b-4ba8-9160-c23e0cbb9ad5",
-					"type": "dataset",
-					"name": "exaSPIM_841260_reconstructions_refined_2026_09_09",
-					"source_path": "exaSPIM_841260_reconstructions_refined_2026_09_09/",
-					"collect": true
-				},
 				{
 					"id": "6CgvydiEtInkUTgy",
 					"source_id": "79bf9032-5cff-4038-b2b8-8a24fa098e3b",
@@ -54,6 +48,8 @@
 				"id": "449ebf74-967d-44bb-9d03-f69c49412589",
 				"name": "exaspim-swc-packaging",
 				"slug": "9464795",
+				"commit": "8a43556c9b0d2f89e6c590148fa785c0d738821b",
+				"image_tag": "c30d2662537494844069ce6a03818afc",
 				"app_panel": true
 			},
 			"resources": {
@@ -78,6 +74,8 @@
 				"id": "47fb449f-8e2d-4430-8fdd-b047ca545c18",
 				"name": "exaspim-swc-resample",
 				"slug": "9001304",
+				"commit": "18493188fd512af11023405573061600e5526b89",
+				"image_tag": "9a7bdd2e0ed102d3dbc3b6bd4c81bae9",
 				"app_panel": true
 			},
 			"resources": {
