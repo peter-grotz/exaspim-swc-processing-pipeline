@@ -1,13 +1,13 @@
 #!/usr/bin/env nextflow
-// hash:sha256:740793c2849e425073f7fa0c38480c76a7291e9171e7c92f70f14bfcadb6e3e7
+// hash:sha256:78a8218ffcfb64c0e5a89b900784c3a0f4cdea763d8924c7c9806c289e51434c
 
 // capsule - exaspim-swc-transform
 process capsule_exaspim_swc_transform_capsule_1 {
 	tag 'capsule-2015425'
 	container "$REGISTRY_HOST/capsule/cec1b540-f971-4a1c-8e85-60040ece90e4"
 
-	cpus 16
-	memory '120 GB'
+	cpus 8
+	memory '60 GB'
 
 	output:
 	path 'capsule/results/*', emit: to_capsule_exaspim_swc_resample_3_2
@@ -18,8 +18,8 @@ process capsule_exaspim_swc_transform_capsule_1 {
 	set -e
 
 	export CO_CAPSULE_ID=cec1b540-f971-4a1c-8e85-60040ece90e4
-	export CO_CPUS=16
-	export CO_MEMORY=128849018880
+	export CO_CPUS=8
+	export CO_MEMORY=64424509440
 
 	mkdir -p capsule
 	mkdir -p capsule/data && ln -s \$PWD/capsule/data /data
@@ -53,8 +53,8 @@ process capsule_exaspim_swc_resample_3 {
 	tag 'capsule-9001304'
 	container "$REGISTRY_HOST/capsule/47fb449f-8e2d-4430-8fdd-b047ca545c18"
 
-	cpus 16
-	memory '120 GB'
+	cpus 8
+	memory '60 GB'
 
 	input:
 	path 'capsule/data/'
@@ -68,8 +68,8 @@ process capsule_exaspim_swc_resample_3 {
 	set -e
 
 	export CO_CAPSULE_ID=47fb449f-8e2d-4430-8fdd-b047ca545c18
-	export CO_CPUS=16
-	export CO_MEMORY=128849018880
+	export CO_CPUS=8
+	export CO_MEMORY=64424509440
 
 	mkdir -p capsule
 	mkdir -p capsule/data && ln -s \$PWD/capsule/data /data
