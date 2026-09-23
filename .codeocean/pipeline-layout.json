@@ -34,6 +34,11 @@
 			"id": "xy-edge__83909dcc-1e88-4816-b247-63f6d0218eff-capsule_exaspim_swc_resample_3",
 			"source": "83909dcc-1e88-4816-b247-63f6d0218eff",
 			"target": "capsule_exaspim_swc_resample_3"
+		},
+		{
+			"id": "xy-edge__ef926cf6-ae1b-4d9b-b716-97316b2ff046-capsule_exaspim_swc_transform_capsule_1",
+			"source": "ef926cf6-ae1b-4d9b-b716-97316b2ff046",
+			"target": "capsule_exaspim_swc_transform_capsule_1"
 		}
 	],
 	"nodes": [
@@ -117,9 +122,17 @@
 			},
 			"selected": false,
 			"type": "dataset"
+		},
+		{
+			"id": "ef926cf6-ae1b-4d9b-b716-97316b2ff046",
+			"position": {
+				"x": 639.6505680860196,
+				"y": -1338.4365869542553
+			},
+			"type": "dataset"
 		}
 	],
-	"timestamp": 1790199875470,
+	"timestamp": 1790200232489,
 	"viewport": {
 		"x": 380.5561845546629,
 		"y": 429.5761115843234,

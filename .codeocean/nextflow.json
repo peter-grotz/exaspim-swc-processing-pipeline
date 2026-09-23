@@ -17,6 +17,14 @@
 			},
 			"inputs": [
 				{
+					"id": "VmGf7UIb0RtZWxF7",
+					"source_id": "ef926cf6-ae1b-4d9b-b716-97316b2ff046",
+					"type": "dataset",
+					"name": "exaSPIM_841260_reconstructions_refined_2026_09_17",
+					"source_path": "exaSPIM_841260_reconstructions_refined_2026_09_17/",
+					"collect": true
+				},
+				{
 					"id": "6CgvydiEtInkUTgy",
 					"source_id": "79bf9032-5cff-4038-b2b8-8a24fa098e3b",
 					"type": "dataset",
