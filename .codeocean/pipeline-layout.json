@@ -37,6 +37,7 @@
 		},
 		{
 			"id": "xy-edge__ef926cf6-ae1b-4d9b-b716-97316b2ff046-capsule_exaspim_swc_transform_capsule_1",
+			"selected": false,
 			"source": "ef926cf6-ae1b-4d9b-b716-97316b2ff046",
 			"target": "capsule_exaspim_swc_transform_capsule_1"
 		}
@@ -126,16 +127,17 @@
 		{
 			"id": "ef926cf6-ae1b-4d9b-b716-97316b2ff046",
 			"position": {
-				"x": 639.6505680860196,
-				"y": -1338.4365869542553
+				"x": 486.3172347526862,
+				"y": -553.0199202875885
 			},
+			"selected": true,
 			"type": "dataset"
 		}
 	],
-	"timestamp": 1790200232489,
+	"timestamp": 1790200250359,
 	"viewport": {
 		"x": 380.5561845546629,
-		"y": 429.5761115843234,
+		"y": 429.9511115843234,
 		"zoom": 0.3
 	}
 }
