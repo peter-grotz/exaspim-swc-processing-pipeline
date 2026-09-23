@@ -44,9 +44,9 @@
 			"id": "capsule_exaspim_swc_transform_capsule_1",
 			"position": {
 				"x": 407.00565512722926,
-				"y": 174.48954621461118
+				"y": 234.48954621461118
 			},
-			"selected": false,
+			"selected": true,
 			"type": "capsule"
 		},
 		{
@@ -119,7 +119,7 @@
 			"type": "dataset"
 		}
 	],
-	"timestamp": 1790189328332,
+	"timestamp": 1790198003603,
 	"viewport": {
 		"x": 260.5561845546629,
 		"y": 275.5761115843234,
