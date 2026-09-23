@@ -1,5 +1,5 @@
 #!/usr/bin/env nextflow
-// hash:sha256:78a8218ffcfb64c0e5a89b900784c3a0f4cdea763d8924c7c9806c289e51434c
+// hash:sha256:00412aac25db97fd5938a00e6f5a8fa1ba77ea9a723ca45bfd90ed45eb154789
 
 // capsule - exaspim-swc-transform
 process capsule_exaspim_swc_transform_capsule_1 {
@@ -26,6 +26,7 @@ process capsule_exaspim_swc_transform_capsule_1 {
 	mkdir -p capsule/results && ln -s \$PWD/capsule/results /results
 	mkdir -p capsule/scratch && ln -s \$PWD/capsule/scratch /scratch
 
+	ln -s "/tmp/data/exaSPIM_841260_reconstructions_refined_2026_09_09" "capsule/data/exaSPIM_841260_reconstructions_refined_2026_09_09" # id: ea280d28-cf7b-4ba8-9160-c23e0cbb9ad5
 	ln -s "/tmp/data/allen_mouse_ccf" "capsule/data/allen_mouse_ccf" # id: 79bf9032-5cff-4038-b2b8-8a24fa098e3b
 	ln -s "/tmp/data/exaspim_template_7subjects_nomask_10um_round6_template_only" "capsule/data/exaspim_template_7subjects_nomask_10um_round6_template_only" # id: 725d783a-a2df-4c64-a5d8-cdc0f35afd3a
 	ln -s "/tmp/data/reg_exaspim_template_to_ccf_25um_v1.5" "capsule/data/reg_exaspim_template_to_ccf_25um_v1.5" # id: 0b22b6d4-5866-4a31-90ad-7be655a32539
