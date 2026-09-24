@@ -1,5 +1,5 @@
 #!/usr/bin/env nextflow
-// hash:sha256:3823391289e7b5aeed29d04611608911621c1755e515f7efaf54b48f23002d49
+// hash:sha256:e7e94a0ce28c22316da910c0882d4a63c2ce9b82815977eed214ef5f344908dd
 
 // capsule - exaspim-swc-transform
 process capsule_exaspim_swc_transform_capsule_1 {
@@ -26,6 +26,10 @@ process capsule_exaspim_swc_transform_capsule_1 {
 	mkdir -p capsule/results && ln -s \$PWD/capsule/results /results
 	mkdir -p capsule/scratch && ln -s \$PWD/capsule/scratch /scratch
 
+	ln -s "/tmp/data/reg_exaspim_template_to_ccf_25um_v1.4" "capsule/data/reg_exaspim_template_to_ccf_25um_v1.4" # id: a07157ab-990e-45d8-8e4c-53ebef2b74df
+	ln -s "/tmp/data/reg_exaspim_template_to_ccf_25um_v1.3" "capsule/data/reg_exaspim_template_to_ccf_25um_v1.3" # id: ee48989d-ae51-4d6b-a520-adaf64831bc1
+	ln -s "/tmp/data/reg_exaspim_template_to_ccf_25um_v1.2" "capsule/data/reg_exaspim_template_to_ccf_25um_v1.2" # id: f49b1346-e9ef-4201-b49b-a70fc6d12ae9
+	ln -s "/tmp/data/reg_exaspim_template_to_ccf_25um_v1.1" "capsule/data/reg_exaspim_template_to_ccf_25um_v1.1" # id: 90e5a323-b4a9-441e-baea-4f9717cda04f
 	ln -s "/tmp/data/exaSPIM_841260_reconstructions_refined_2026_09_17" "capsule/data/exaSPIM_841260_reconstructions_refined_2026_09_17" # id: ef926cf6-ae1b-4d9b-b716-97316b2ff046
 	ln -s "/tmp/data/allen_mouse_ccf" "capsule/data/allen_mouse_ccf" # id: 79bf9032-5cff-4038-b2b8-8a24fa098e3b
 	ln -s "/tmp/data/exaspim_template_7subjects_nomask_10um_round6_template_only" "capsule/data/exaspim_template_7subjects_nomask_10um_round6_template_only" # id: 725d783a-a2df-4c64-a5d8-cdc0f35afd3a
@@ -37,7 +41,7 @@ process capsule_exaspim_swc_transform_capsule_1 {
 	else
 		git -c credential.helper= clone "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-2015425.git" capsule-repo
 	fi
-	git -C capsule-repo checkout 3c0173452d527bc0a97b86a6d0771f17e14e16a5 --quiet
+	git -C capsule-repo checkout c59beba207924f1484eb4e22c400c6853c38da4a --quiet
 	mv capsule-repo/code capsule/code && ln -s \$PWD/capsule/code /code
 	rm -rf capsule-repo
 
@@ -53,7 +57,7 @@ process capsule_exaspim_swc_transform_capsule_1 {
 // capsule - exaspim-swc-resample
 process capsule_exaspim_swc_resample_3 {
 	tag 'capsule-9001304'
-	container "$REGISTRY_HOST/capsule/47fb449f-8e2d-4430-8fdd-b047ca545c18:4dc036b2edb332a10955029f4fbc39b6"
+	container "$REGISTRY_HOST/capsule/47fb449f-8e2d-4430-8fdd-b047ca545c18:3239568a31b558099c3906ad84a85612"
 
 	cpus 8
 	memory '60 GB'
@@ -86,7 +90,7 @@ process capsule_exaspim_swc_resample_3 {
 	else
 		git -c credential.helper= clone "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-9001304.git" capsule-repo
 	fi
-	git -C capsule-repo checkout 06ce9d195ea1675baef1e6d3dfa44e62d8143be7 --quiet
+	git -C capsule-repo checkout 23b7fd43261874ec4f999a1df499a2a778c3a6ed --quiet
 	mv capsule-repo/code capsule/code && ln -s \$PWD/capsule/code /code
 	rm -rf capsule-repo
 

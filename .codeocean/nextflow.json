@@ -7,7 +7,7 @@
 				"id": "cec1b540-f971-4a1c-8e85-60040ece90e4",
 				"name": "exaspim-swc-transform",
 				"slug": "2015425",
-				"commit": "3c0173452d527bc0a97b86a6d0771f17e14e16a5",
+				"commit": "c59beba207924f1484eb4e22c400c6853c38da4a",
 				"image_tag": "cacc52a2949b32b7ec3bd3e25f74b105",
 				"app_panel": true
 			},
@@ -16,6 +16,38 @@
 				"memory": 60
 			},
 			"inputs": [
+				{
+					"id": "465oiFdf2NxiNroX",
+					"source_id": "a07157ab-990e-45d8-8e4c-53ebef2b74df",
+					"type": "dataset",
+					"name": "reg_exaspim_template_to_ccf_25um_v1.4",
+					"source_path": "reg_exaspim_template_to_ccf_25um_v1.4/",
+					"collect": true
+				},
+				{
+					"id": "cQuQZZvT0vMmmFwv",
+					"source_id": "ee48989d-ae51-4d6b-a520-adaf64831bc1",
+					"type": "dataset",
+					"name": "reg_exaspim_template_to_ccf_25um_v1.3",
+					"source_path": "reg_exaspim_template_to_ccf_25um_v1.3/",
+					"collect": true
+				},
+				{
+					"id": "7HXRsXHOWcyRcVvU",
+					"source_id": "f49b1346-e9ef-4201-b49b-a70fc6d12ae9",
+					"type": "dataset",
+					"name": "reg_exaspim_template_to_ccf_25um_v1.2",
+					"source_path": "reg_exaspim_template_to_ccf_25um_v1.2/",
+					"collect": true
+				},
+				{
+					"id": "fITU4lG3dFnNChwm",
+					"source_id": "90e5a323-b4a9-441e-baea-4f9717cda04f",
+					"type": "dataset",
+					"name": "reg_exaspim_template_to_ccf_25um_v1.1",
+					"source_path": "reg_exaspim_template_to_ccf_25um_v1.1/",
+					"collect": true
+				},
 				{
 					"id": "VmGf7UIb0RtZWxF7",
 					"source_id": "ef926cf6-ae1b-4d9b-b716-97316b2ff046",
@@ -82,8 +114,8 @@
 				"id": "47fb449f-8e2d-4430-8fdd-b047ca545c18",
 				"name": "exaspim-swc-resample",
 				"slug": "9001304",
-				"commit": "06ce9d195ea1675baef1e6d3dfa44e62d8143be7",
-				"image_tag": "4dc036b2edb332a10955029f4fbc39b6",
+				"commit": "23b7fd43261874ec4f999a1df499a2a778c3a6ed",
+				"image_tag": "3239568a31b558099c3906ad84a85612",
 				"app_panel": true
 			},
 			"resources": {
