@@ -17,6 +17,14 @@
 			},
 			"inputs": [
 				{
+					"id": "Wn8E0KWve7BwEu5U",
+					"source_id": "30dd60f8-d85d-46e6-8a6d-3af4b7577f04",
+					"type": "dataset",
+					"name": "reg_exaspim_template_to_ccf_withGradMap_10um_v1.0",
+					"source_path": "reg_exaspim_template_to_ccf_withGradMap_10um_v1.0/",
+					"collect": true
+				},
+				{
 					"id": "465oiFdf2NxiNroX",
 					"source_id": "a07157ab-990e-45d8-8e4c-53ebef2b74df",
 					"type": "dataset",
