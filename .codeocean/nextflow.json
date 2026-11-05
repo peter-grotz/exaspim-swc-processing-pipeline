@@ -7,8 +7,8 @@
 				"id": "cec1b540-f971-4a1c-8e85-60040ece90e4",
 				"name": "exaspim-swc-transform",
 				"slug": "2015425",
-				"commit": "edba73925fa92827a2f1e5335b9c9195088c6d79",
-				"image_tag": "fb759d7af8374dcdc755eb87d6226824",
+				"commit": "bbb69dd037c3eb5077d8f6bc2ed7444666524292",
+				"image_tag": "0a842edd984a47d3edc4c536e1d397fa",
 				"app_panel": true
 			},
 			"resources": {
@@ -96,8 +96,8 @@
 				"id": "449ebf74-967d-44bb-9d03-f69c49412589",
 				"name": "exaspim-swc-packaging",
 				"slug": "9464795",
-				"commit": "2fec3fe29af57c0180ee8d821ab3494973ca2718",
-				"image_tag": "9d3fec3ed73f5d97c6a6c8be80f07467",
+				"commit": "8aff0258771f8c189aade4fa90d57896a9490cf4",
+				"image_tag": "8279774e2030452782dfa77fb6bdb0b0",
 				"app_panel": true
 			},
 			"resources": {
@@ -122,8 +122,8 @@
 				"id": "47fb449f-8e2d-4430-8fdd-b047ca545c18",
 				"name": "exaspim-swc-resample",
 				"slug": "9001304",
-				"commit": "23b7fd43261874ec4f999a1df499a2a778c3a6ed",
-				"image_tag": "3239568a31b558099c3906ad84a85612",
+				"commit": "42d5ce74f1dcc77de93d69b4bd23a2e7ff91c715",
+				"image_tag": "24f4ac174cc7f8748f331b85a21d3016",
 				"app_panel": true
 			},
 			"resources": {
