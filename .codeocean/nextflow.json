@@ -7,8 +7,8 @@
 				"id": "cec1b540-f971-4a1c-8e85-60040ece90e4",
 				"name": "exaspim-swc-transform",
 				"slug": "2015425",
-				"commit": "bbb69dd037c3eb5077d8f6bc2ed7444666524292",
-				"image_tag": "0a842edd984a47d3edc4c536e1d397fa",
+				"commit": "eace48acd027d630da86c64f5ce8bfe9a2b1add0",
+				"image_tag": "dab6eadf477e22dfc83975186aa1d910",
 				"app_panel": true
 			},
 			"resources": {

@@ -1,10 +1,10 @@
 #!/usr/bin/env nextflow
-// hash:sha256:12e69ab2c39e78c0c52c590130c6878b36cd15e9009774ffac50a47dacbac714
+// hash:sha256:a349ca55c42441bec4c572ec5cc24a5375c24f57dcedcfe81fbcb069c8133d56
 
 // capsule - exaspim-swc-transform
 process capsule_exaspim_swc_transform_capsule_1 {
 	tag 'capsule-2015425'
-	container "$REGISTRY_HOST/capsule/cec1b540-f971-4a1c-8e85-60040ece90e4:0a842edd984a47d3edc4c536e1d397fa"
+	container "$REGISTRY_HOST/capsule/cec1b540-f971-4a1c-8e85-60040ece90e4:dab6eadf477e22dfc83975186aa1d910"
 
 	cpus 8
 	memory '60 GB'
@@ -42,7 +42,7 @@ process capsule_exaspim_swc_transform_capsule_1 {
 	else
 		git -c credential.helper= clone "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-2015425.git" capsule-repo
 	fi
-	git -C capsule-repo checkout bbb69dd037c3eb5077d8f6bc2ed7444666524292 --quiet
+	git -C capsule-repo checkout eace48acd027d630da86c64f5ce8bfe9a2b1add0 --quiet
 	mv capsule-repo/code capsule/code && ln -s \$PWD/capsule/code /code
 	rm -rf capsule-repo
 
