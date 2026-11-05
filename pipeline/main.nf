@@ -1,5 +1,5 @@
 #!/usr/bin/env nextflow
-// hash:sha256:a349ca55c42441bec4c572ec5cc24a5375c24f57dcedcfe81fbcb069c8133d56
+// hash:sha256:7ff10fdbd25ccddcabc17701837fe5f9648abe3454577ff2ddbfaae2f8ddb1c2
 
 // capsule - exaspim-swc-transform
 process capsule_exaspim_swc_transform_capsule_1 {
@@ -26,12 +26,12 @@ process capsule_exaspim_swc_transform_capsule_1 {
 	mkdir -p capsule/results && ln -s \$PWD/capsule/results /results
 	mkdir -p capsule/scratch && ln -s \$PWD/capsule/scratch /scratch
 
+	ln -s "/tmp/data/exaSPIM_841260_reconstructions_test_2026_11_05" "capsule/data/exaSPIM_841260_reconstructions_test_2026_11_05" # id: f0e2b0e7-598d-4f63-84fd-3dd60f28fe80
 	ln -s "/tmp/data/reg_exaspim_template_to_ccf_withGradMap_10um_v1.0" "capsule/data/reg_exaspim_template_to_ccf_withGradMap_10um_v1.0" # id: 30dd60f8-d85d-46e6-8a6d-3af4b7577f04
 	ln -s "/tmp/data/reg_exaspim_template_to_ccf_25um_v1.4" "capsule/data/reg_exaspim_template_to_ccf_25um_v1.4" # id: a07157ab-990e-45d8-8e4c-53ebef2b74df
 	ln -s "/tmp/data/reg_exaspim_template_to_ccf_25um_v1.3" "capsule/data/reg_exaspim_template_to_ccf_25um_v1.3" # id: ee48989d-ae51-4d6b-a520-adaf64831bc1
 	ln -s "/tmp/data/reg_exaspim_template_to_ccf_25um_v1.2" "capsule/data/reg_exaspim_template_to_ccf_25um_v1.2" # id: f49b1346-e9ef-4201-b49b-a70fc6d12ae9
 	ln -s "/tmp/data/reg_exaspim_template_to_ccf_25um_v1.1" "capsule/data/reg_exaspim_template_to_ccf_25um_v1.1" # id: 90e5a323-b4a9-441e-baea-4f9717cda04f
-	ln -s "/tmp/data/exaSPIM_841260_reconstructions_refined_2026_09_17" "capsule/data/exaSPIM_841260_reconstructions_refined_2026_09_17" # id: ef926cf6-ae1b-4d9b-b716-97316b2ff046
 	ln -s "/tmp/data/allen_mouse_ccf" "capsule/data/allen_mouse_ccf" # id: 79bf9032-5cff-4038-b2b8-8a24fa098e3b
 	ln -s "/tmp/data/exaspim_template_7subjects_nomask_10um_round6_template_only" "capsule/data/exaspim_template_7subjects_nomask_10um_round6_template_only" # id: 725d783a-a2df-4c64-a5d8-cdc0f35afd3a
 	ln -s "/tmp/data/reg_exaspim_template_to_ccf_25um_v1.5" "capsule/data/reg_exaspim_template_to_ccf_25um_v1.5" # id: 0b22b6d4-5866-4a31-90ad-7be655a32539
@@ -42,7 +42,7 @@ process capsule_exaspim_swc_transform_capsule_1 {
 	else
 		git -c credential.helper= clone "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-2015425.git" capsule-repo
 	fi
-	git -C capsule-repo checkout eace48acd027d630da86c64f5ce8bfe9a2b1add0 --quiet
+	git -C capsule-repo checkout f55a182c8eb7b60679ff3b6c325fe333f5c98efa --quiet
 	mv capsule-repo/code capsule/code && ln -s \$PWD/capsule/code /code
 	rm -rf capsule-repo
 

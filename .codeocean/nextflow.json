@@ -7,7 +7,7 @@
 				"id": "cec1b540-f971-4a1c-8e85-60040ece90e4",
 				"name": "exaspim-swc-transform",
 				"slug": "2015425",
-				"commit": "eace48acd027d630da86c64f5ce8bfe9a2b1add0",
+				"commit": "f55a182c8eb7b60679ff3b6c325fe333f5c98efa",
 				"image_tag": "dab6eadf477e22dfc83975186aa1d910",
 				"app_panel": true
 			},
@@ -16,6 +16,14 @@
 				"memory": 60
 			},
 			"inputs": [
+				{
+					"id": "ZZH1L75a2HT5k7cO",
+					"source_id": "f0e2b0e7-598d-4f63-84fd-3dd60f28fe80",
+					"type": "dataset",
+					"name": "exaSPIM_841260_reconstructions_test_2026_11_05",
+					"source_path": "exaSPIM_841260_reconstructions_test_2026_11_05/",
+					"collect": true
+				},
 				{
 					"id": "Wn8E0KWve7BwEu5U",
 					"source_id": "30dd60f8-d85d-46e6-8a6d-3af4b7577f04",
@@ -54,14 +62,6 @@
 					"type": "dataset",
 					"name": "reg_exaspim_template_to_ccf_25um_v1.1",
 					"source_path": "reg_exaspim_template_to_ccf_25um_v1.1/",
-					"collect": true
-				},
-				{
-					"id": "VmGf7UIb0RtZWxF7",
-					"source_id": "ef926cf6-ae1b-4d9b-b716-97316b2ff046",
-					"type": "dataset",
-					"name": "exaSPIM_841260_reconstructions_refined_2026_09_17",
-					"source_path": "exaSPIM_841260_reconstructions_refined_2026_09_17/",
 					"collect": true
 				},
 				{
