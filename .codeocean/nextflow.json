@@ -18,10 +18,10 @@
 			"inputs": [
 				{
 					"id": "0dkLg7U58wrHMbtr",
-					"source_id": "f0e2b0e7-598d-4f63-84fd-3dd60f28fe80",
+					"source_id": "cb08490c-6104-466c-bbed-178dcfe1e7ac",
 					"type": "dataset",
-					"name": "exaSPIM_841260_reconstructions_test_2026_11_05",
-					"source_path": "exaSPIM_841260_reconstructions_test_2026_11_05/",
+					"name": "exaSPIM_653153_reconstructions_refined_2026_06_16",
+					"source_path": "exaSPIM_653153_reconstructions_refined_2026_06_16/",
 					"collect": true
 				},
 				{
