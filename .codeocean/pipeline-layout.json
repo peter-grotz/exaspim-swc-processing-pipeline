@@ -2,13 +2,9 @@
 	"edges": [
 		{
 			"id": "xy-edge__capsule_exaspim_swc_transform_capsule_1-capsule_exaspim_swc_resample_3",
+			"selected": false,
 			"source": "capsule_exaspim_swc_transform_capsule_1",
 			"target": "capsule_exaspim_swc_resample_3"
-		},
-		{
-			"id": "xy-edge__capsule_exaspim_swc_resample_3-capsule_exaspim_swc_packaging_2",
-			"source": "capsule_exaspim_swc_resample_3",
-			"target": "capsule_exaspim_swc_packaging_2"
 		},
 		{
 			"id": "xy-edge__capsule_exaspim_swc_packaging_2-results",
@@ -37,7 +33,6 @@
 		},
 		{
 			"id": "xy-edge__ef926cf6-ae1b-4d9b-b716-97316b2ff046-capsule_exaspim_swc_transform_capsule_1",
-			"selected": false,
 			"source": "ef926cf6-ae1b-4d9b-b716-97316b2ff046",
 			"target": "capsule_exaspim_swc_transform_capsule_1"
 		},
@@ -69,6 +64,66 @@
 			"selected": false,
 			"source": "30dd60f8-d85d-46e6-8a6d-3af4b7577f04",
 			"target": "capsule_exaspim_swc_transform_capsule_1"
+		},
+		{
+			"id": "xy-edge__capsule_exaspim_swc_resample_3-capsule_neuron_reconstruction_qc_capsule_4",
+			"source": "capsule_exaspim_swc_resample_3",
+			"target": "capsule_neuron_reconstruction_qc_capsule_4"
+		},
+		{
+			"id": "xy-edge__data/qc-configs-capsule_neuron_reconstruction_qc_capsule_4",
+			"selected": false,
+			"source": "data/qc-configs",
+			"target": "capsule_neuron_reconstruction_qc_capsule_4"
+		},
+		{
+			"id": "xy-edge__capsule_exaspim_swc_resample_3-capsule_exaspim_swc_packaging_2",
+			"source": "capsule_exaspim_swc_resample_3",
+			"target": "capsule_exaspim_swc_packaging_2"
+		},
+		{
+			"id": "xy-edge__data/qc-configs-capsule_neuron_reconstruction_qc_capsule_5",
+			"selected": false,
+			"source": "data/qc-configs",
+			"target": "capsule_neuron_reconstruction_qc_capsule_5"
+		},
+		{
+			"id": "xy-edge__capsule_exaspim_swc_resample_3-capsule_neuron_reconstruction_qc_capsule_5",
+			"source": "capsule_exaspim_swc_resample_3",
+			"target": "capsule_neuron_reconstruction_qc_capsule_5"
+		},
+		{
+			"id": "xy-edge__capsule_neuron_reconstruction_qc_capsule_4-capsule_combine_qc_metrics_6",
+			"selected": false,
+			"source": "capsule_neuron_reconstruction_qc_capsule_4",
+			"target": "capsule_combine_qc_metrics_6"
+		},
+		{
+			"id": "xy-edge__capsule_neuron_reconstruction_qc_capsule_5-capsule_combine_qc_metrics_6",
+			"selected": false,
+			"source": "capsule_neuron_reconstruction_qc_capsule_5",
+			"target": "capsule_combine_qc_metrics_6"
+		},
+		{
+			"id": "xy-edge__capsule_combine_qc_metrics_6-capsule_exaspim_swc_packaging_2",
+			"source": "capsule_combine_qc_metrics_6",
+			"target": "capsule_exaspim_swc_packaging_2"
+		},
+		{
+			"id": "xy-edge__capsule_exaspim_swc_resample_3-capsule_neuron_reconstruction_qc_capsule_7",
+			"source": "capsule_exaspim_swc_resample_3",
+			"target": "capsule_neuron_reconstruction_qc_capsule_7"
+		},
+		{
+			"id": "xy-edge__data/qc-configs-capsule_neuron_reconstruction_qc_capsule_7",
+			"selected": false,
+			"source": "data/qc-configs",
+			"target": "capsule_neuron_reconstruction_qc_capsule_7"
+		},
+		{
+			"id": "xy-edge__capsule_neuron_reconstruction_qc_capsule_7-capsule_combine_qc_metrics_6",
+			"source": "capsule_neuron_reconstruction_qc_capsule_7",
+			"target": "capsule_combine_qc_metrics_6"
 		}
 	],
 	"nodes": [
@@ -78,8 +133,8 @@
 			},
 			"id": "capsule_exaspim_swc_transform_capsule_1",
 			"position": {
-				"x": 407.00565512722926,
-				"y": 234.48954621461118
+				"x": 399.00565512722926,
+				"y": 207.8228795479445
 			},
 			"selected": false,
 			"type": "capsule"
@@ -87,35 +142,11 @@
 		{
 			"id": "results",
 			"position": {
-				"x": 444.6860576503397,
-				"y": 1150.471291483851
+				"x": 455.40724229697867,
+				"y": 1357.2369953833172
 			},
 			"selected": false,
 			"type": "results"
-		},
-		{
-			"data": {
-				"capsule_id": "449ebf74-967d-44bb-9d03-f69c49412589"
-			},
-			"id": "capsule_exaspim_swc_packaging_2",
-			"position": {
-				"x": 399.19939480803475,
-				"y": 817.0803567694525
-			},
-			"selected": false,
-			"type": "capsule"
-		},
-		{
-			"data": {
-				"capsule_id": "47fb449f-8e2d-4430-8fdd-b047ca545c18"
-			},
-			"id": "capsule_exaspim_swc_resample_3",
-			"position": {
-				"x": 395.4539069770579,
-				"y": 489.251252017953
-			},
-			"selected": false,
-			"type": "capsule"
 		},
 		{
 			"id": "0b22b6d4-5866-4a31-90ad-7be655a32539",
@@ -147,19 +178,10 @@
 		{
 			"id": "83909dcc-1e88-4816-b247-63f6d0218eff",
 			"position": {
-				"x": 1138.2295862032136,
-				"y": 332.4135318739131
+				"x": 749.2037433108844,
+				"y": 356.9190967805165
 			},
 			"selected": false,
-			"type": "dataset"
-		},
-		{
-			"id": "ef926cf6-ae1b-4d9b-b716-97316b2ff046",
-			"position": {
-				"x": -11.521656395711474,
-				"y": -506.4057919029071
-			},
-			"selected": true,
 			"type": "dataset"
 		},
 		{
@@ -206,12 +228,101 @@
 			},
 			"selected": false,
 			"type": "dataset"
+		},
+		{
+			"data": {
+				"capsule_id": "00a1b27a-7ad1-495a-bf51-21c137d7b094"
+			},
+			"id": "capsule_neuron_reconstruction_qc_capsule_4",
+			"position": {
+				"x": 622.7172423393845,
+				"y": 699.6965491922775
+			},
+			"selected": false,
+			"type": "capsule"
+		},
+		{
+			"id": "data/qc-configs",
+			"position": {
+				"x": 990.9567656722013,
+				"y": 478.1534148759423
+			},
+			"selected": false,
+			"type": "pipeline"
+		},
+		{
+			"data": {
+				"capsule_id": "00a1b27a-7ad1-495a-bf51-21c137d7b094"
+			},
+			"id": "capsule_neuron_reconstruction_qc_capsule_5",
+			"position": {
+				"x": 960.6815107816296,
+				"y": 713.1429905270855
+			},
+			"selected": true,
+			"type": "capsule"
+		},
+		{
+			"data": {
+				"capsule_id": "47fb449f-8e2d-4430-8fdd-b047ca545c18"
+			},
+			"id": "capsule_exaspim_swc_resample_3",
+			"position": {
+				"x": 395.4539069770579,
+				"y": 489.251252017953
+			},
+			"selected": false,
+			"type": "capsule"
+		},
+		{
+			"id": "ef926cf6-ae1b-4d9b-b716-97316b2ff046",
+			"position": {
+				"x": 157.94551992593404,
+				"y": -327.65274290610296
+			},
+			"type": "dataset"
+		},
+		{
+			"data": {
+				"capsule_id": "12d0c12d-45e4-4ec1-8412-f01b886e7d34"
+			},
+			"id": "capsule_combine_qc_metrics_6",
+			"position": {
+				"x": 955.2914525161846,
+				"y": 972.3101420522091
+			},
+			"selected": false,
+			"type": "capsule"
+		},
+		{
+			"data": {
+				"capsule_id": "00a1b27a-7ad1-495a-bf51-21c137d7b094"
+			},
+			"id": "capsule_neuron_reconstruction_qc_capsule_7",
+			"position": {
+				"x": 1296.2963568758928,
+				"y": 705.2295911721776
+			},
+			"selected": false,
+			"type": "capsule"
+		},
+		{
+			"data": {
+				"capsule_id": "449ebf74-967d-44bb-9d03-f69c49412589"
+			},
+			"id": "capsule_exaspim_swc_packaging_2",
+			"position": {
+				"x": 407.1756644789474,
+				"y": 1073.2362356182866
+			},
+			"selected": false,
+			"type": "capsule"
 		}
 	],
-	"timestamp": 1792514063189,
+	"timestamp": 1794255469653,
 	"viewport": {
-		"x": 416.78869682344447,
-		"y": 504.9977747992998,
-		"zoom": 0.5363180835151178
+		"x": 38.485855508672785,
+		"y": 196.73257584363046,
+		"zoom": 0.37499999999999994
 	}
 }

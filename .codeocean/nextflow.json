@@ -7,8 +7,8 @@
 				"id": "cec1b540-f971-4a1c-8e85-60040ece90e4",
 				"name": "exaspim-swc-transform",
 				"slug": "2015425",
-				"commit": "edba73925fa92827a2f1e5335b9c9195088c6d79",
-				"image_tag": "fb759d7af8374dcdc755eb87d6226824",
+				"commit": "f55a182c8eb7b60679ff3b6c325fe333f5c98efa",
+				"image_tag": "dab6eadf477e22dfc83975186aa1d910",
 				"app_panel": true
 			},
 			"resources": {
@@ -16,6 +16,14 @@
 				"memory": 60
 			},
 			"inputs": [
+				{
+					"id": "VmGf7UIb0RtZWxF7",
+					"source_id": "ef926cf6-ae1b-4d9b-b716-97316b2ff046",
+					"type": "dataset",
+					"name": "exaSPIM_841260_reconstructions_refined_2026_09_17",
+					"source_path": "exaSPIM_841260_reconstructions_refined_2026_09_17/refinement",
+					"collect": true
+				},
 				{
 					"id": "Wn8E0KWve7BwEu5U",
 					"source_id": "30dd60f8-d85d-46e6-8a6d-3af4b7577f04",
@@ -57,14 +65,6 @@
 					"collect": true
 				},
 				{
-					"id": "VmGf7UIb0RtZWxF7",
-					"source_id": "ef926cf6-ae1b-4d9b-b716-97316b2ff046",
-					"type": "dataset",
-					"name": "exaSPIM_841260_reconstructions_refined_2026_09_17",
-					"source_path": "exaSPIM_841260_reconstructions_refined_2026_09_17/",
-					"collect": true
-				},
-				{
 					"id": "6CgvydiEtInkUTgy",
 					"source_id": "79bf9032-5cff-4038-b2b8-8a24fa098e3b",
 					"type": "dataset",
@@ -96,8 +96,8 @@
 				"id": "449ebf74-967d-44bb-9d03-f69c49412589",
 				"name": "exaspim-swc-packaging",
 				"slug": "9464795",
-				"commit": "2fec3fe29af57c0180ee8d821ab3494973ca2718",
-				"image_tag": "9d3fec3ed73f5d97c6a6c8be80f07467",
+				"commit": "a9b56fc9ff202e9e8e2d8b2523754fd9504ca8b5",
+				"image_tag": "3b0d82f0a4bc6bd6aef79519e0adf3d0",
 				"app_panel": true
 			},
 			"resources": {
@@ -106,7 +106,13 @@
 			},
 			"inputs": [
 				{
-					"id": "31wYd7tAjKByPykr",
+					"id": "S0GkjhfTdN8A1hgv",
+					"source_id": "capsule_combine_qc_metrics_6",
+					"type": "capsule",
+					"name": "Combine QC Metrics"
+				},
+				{
+					"id": "uo6tHDUhv09glus8",
 					"source_id": "capsule_exaspim_swc_resample_3",
 					"type": "capsule",
 					"name": "exaspim-swc-resample"
@@ -122,13 +128,13 @@
 				"id": "47fb449f-8e2d-4430-8fdd-b047ca545c18",
 				"name": "exaspim-swc-resample",
 				"slug": "9001304",
-				"commit": "23b7fd43261874ec4f999a1df499a2a778c3a6ed",
-				"image_tag": "3239568a31b558099c3906ad84a85612",
+				"commit": "42d5ce74f1dcc77de93d69b4bd23a2e7ff91c715",
+				"image_tag": "24f4ac174cc7f8748f331b85a21d3016",
 				"app_panel": true
 			},
 			"resources": {
-				"cpus": 8,
-				"memory": 60
+				"cpus": 16,
+				"memory": 128
 			},
 			"inputs": [
 				{
@@ -144,6 +150,139 @@
 					"source_id": "capsule_exaspim_swc_transform_capsule_1",
 					"type": "capsule",
 					"name": "exaspim-swc-transform-capsule"
+				}
+			]
+		},
+		{
+			"name": "capsule_neuron_reconstruction_qc_capsule_4",
+			"capsule": {
+				"id": "00a1b27a-7ad1-495a-bf51-21c137d7b094",
+				"name": "Neuron Reconstruction QC Capsule",
+				"slug": "1223705",
+				"commit": "c3758f6b813b251468e1b70ac863d74c650bcfab",
+				"image_tag": "0bdc75222d53fbd80c157cd9eab64f19",
+				"app_panel": true
+			},
+			"resources": {
+				"cpus": 4,
+				"memory": 32
+			},
+			"inputs": [
+				{
+					"id": "5jCCirp8c4qRGZRK",
+					"source_id": "capsule_exaspim_swc_resample_3",
+					"type": "capsule",
+					"name": "exaspim-swc-resample"
+				},
+				{
+					"id": "oERoabms3JbB7OOX",
+					"source_id": "data/qc-configs",
+					"type": "pipeline",
+					"name": "qc-configs",
+					"source_path": "qc-configs/aligned-config.json",
+					"target_path": "qc_config.json"
+				}
+			]
+		},
+		{
+			"name": "capsule_neuron_reconstruction_qc_capsule_5",
+			"capsule": {
+				"id": "00a1b27a-7ad1-495a-bf51-21c137d7b094",
+				"name": "Neuron Reconstruction QC Capsule",
+				"slug": "1223705",
+				"commit": "c3758f6b813b251468e1b70ac863d74c650bcfab",
+				"image_tag": "0bdc75222d53fbd80c157cd9eab64f19",
+				"app_panel": true
+			},
+			"resources": {
+				"cpus": 4,
+				"memory": 32
+			},
+			"inputs": [
+				{
+					"id": "LY8E5LdBjRYiKZNN",
+					"source_id": "capsule_exaspim_swc_resample_3",
+					"type": "capsule",
+					"name": "exaspim-swc-resample"
+				},
+				{
+					"id": "2k9XFBRcrKMpzxAf",
+					"source_id": "data/qc-configs",
+					"type": "pipeline",
+					"name": "qc-configs",
+					"source_path": "qc-configs/refined-config.json",
+					"target_path": "qc_config.json"
+				}
+			]
+		},
+		{
+			"name": "capsule_combine_qc_metrics_6",
+			"capsule": {
+				"id": "12d0c12d-45e4-4ec1-8412-f01b886e7d34",
+				"name": "Combine QC Metrics",
+				"slug": "8372130",
+				"commit": "38a6f639f5049279ca162738a8cd94b688ea6204",
+				"image_tag": "716b737eaa2156fe8a3fd4e806b21e68"
+			},
+			"resources": {
+				"cpus": 1,
+				"memory": 8
+			},
+			"inputs": [
+				{
+					"id": "IYdXP1hiRn23uCdq",
+					"source_id": "capsule_neuron_reconstruction_qc_capsule_4",
+					"type": "capsule",
+					"name": "Neuron Reconstruction QC Capsule",
+					"source_path": "transformed-qc/aind_data_schema/",
+					"target_path": "transformed-qc/"
+				},
+				{
+					"id": "XtnCufeArWL1QrJ9",
+					"source_id": "capsule_neuron_reconstruction_qc_capsule_5",
+					"type": "capsule",
+					"name": "Neuron Reconstruction QC Capsule",
+					"source_path": "refined-qc/aind_data_schema/",
+					"target_path": "refined-qc/"
+				},
+				{
+					"id": "1JtwPwccnPVPkzoi",
+					"source_id": "capsule_neuron_reconstruction_qc_capsule_7",
+					"type": "capsule",
+					"name": "Neuron Reconstruction QC Capsule",
+					"source_path": "raw-qc/aind_data_schema/",
+					"target_path": "raw-qc/"
+				}
+			]
+		},
+		{
+			"name": "capsule_neuron_reconstruction_qc_capsule_7",
+			"capsule": {
+				"id": "00a1b27a-7ad1-495a-bf51-21c137d7b094",
+				"name": "Neuron Reconstruction QC Capsule",
+				"slug": "1223705",
+				"commit": "c3758f6b813b251468e1b70ac863d74c650bcfab",
+				"image_tag": "0bdc75222d53fbd80c157cd9eab64f19",
+				"app_panel": true
+			},
+			"resources": {
+				"cpus": 4,
+				"memory": 32
+			},
+			"inputs": [
+				{
+					"id": "irSORoWAoTN7nop9",
+					"source_id": "data/qc-configs",
+					"type": "pipeline",
+					"name": "qc-configs",
+					"source_path": "qc-configs/raw-config.json",
+					"target_path": "qc_config.json"
+				},
+				{
+					"id": "NLxH0NhsQYlFCfI0",
+					"source_id": "capsule_exaspim_swc_resample_3",
+					"type": "capsule",
+					"name": "exaspim-swc-resample"
 				}
 			]
 		}

@@ -30,6 +30,10 @@
 			"mount": "reg_exaspim_template_to_ccf_25um_v1.4"
 		},
 		{
+			"id": "b2c45da3-4cd1-4d2a-9d7a-3ebe8df4a077",
+			"mount": "swc-processing-test-asset-refined-841260"
+		},
+		{
 			"id": "ea280d28-cf7b-4ba8-9160-c23e0cbb9ad5",
 			"mount": "exaSPIM_841260_reconstructions_refined_2026_09_09"
 		},
