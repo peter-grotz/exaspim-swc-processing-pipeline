@@ -38,6 +38,10 @@
 			"mount": "swc-processing-test-asset-refined-841260"
 		},
 		{
+			"id": "cb08490c-6104-466c-bbed-178dcfe1e7ac",
+			"mount": "exaSPIM_653153_reconstructions_refined_2026_06_16"
+		},
+		{
 			"id": "ea280d28-cf7b-4ba8-9160-c23e0cbb9ad5",
 			"mount": "exaSPIM_841260_reconstructions_refined_2026_09_09"
 		},
@@ -48,6 +52,10 @@
 		{
 			"id": "ef926cf6-ae1b-4d9b-b716-97316b2ff046",
 			"mount": "exaSPIM_841260_reconstructions_refined_2026_09_17"
+		},
+		{
+			"id": "f0e2b0e7-598d-4f63-84fd-3dd60f28fe80",
+			"mount": "exaSPIM_841260_reconstructions_test_2026_11_05"
 		},
 		{
 			"id": "f49b1346-e9ef-4201-b49b-a70fc6d12ae9",
