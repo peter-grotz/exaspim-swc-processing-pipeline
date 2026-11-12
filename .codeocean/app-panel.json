@@ -1,0 +1,14 @@
+{
+	"version": 1,
+	"processes": [
+		"capsule_exaspim_swc_transform_capsule_1",
+		"capsule_exaspim_swc_packaging_2",
+		"capsule_exaspim_swc_resample_3",
+		"capsule_neuron_reconstruction_qc_capsule_4",
+		"capsule_neuron_reconstruction_qc_capsule_5",
+		"capsule_swc_refinement_merge_reconstructions_8",
+		"capsule_swc_refinment_10",
+		"capsule_neuron_reconstruction_qc_capsule_11",
+		"capsule_neuron_reconstruction_qc_capsule_12"
+	]
+}
