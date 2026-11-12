@@ -32,11 +32,6 @@
 			"target": "capsule_exaspim_swc_resample_3"
 		},
 		{
-			"id": "xy-edge__ef926cf6-ae1b-4d9b-b716-97316b2ff046-capsule_exaspim_swc_transform_capsule_1",
-			"source": "ef926cf6-ae1b-4d9b-b716-97316b2ff046",
-			"target": "capsule_exaspim_swc_transform_capsule_1"
-		},
-		{
 			"id": "xy-edge__90e5a323-b4a9-441e-baea-4f9717cda04f-capsule_exaspim_swc_transform_capsule_1",
 			"selected": false,
 			"source": "90e5a323-b4a9-441e-baea-4f9717cda04f",
@@ -110,19 +105,85 @@
 			"target": "capsule_exaspim_swc_packaging_2"
 		},
 		{
-			"id": "xy-edge__capsule_exaspim_swc_resample_3-capsule_neuron_reconstruction_qc_capsule_7",
-			"source": "capsule_exaspim_swc_resample_3",
-			"target": "capsule_neuron_reconstruction_qc_capsule_7"
+			"id": "xy-edge__3a69aa68-d0d0-4440-b650-6976c931200e-capsule_swc_refinement_merge_reconstructions_8",
+			"selected": false,
+			"source": "3a69aa68-d0d0-4440-b650-6976c931200e",
+			"target": "capsule_swc_refinement_merge_reconstructions_8"
 		},
 		{
-			"id": "xy-edge__data/qc-configs-capsule_neuron_reconstruction_qc_capsule_7",
+			"id": "xy-edge__capsule_swc_refinement_merge_reconstructions_8-capsule_neuron_reconstruction_qc_capsule_11",
+			"selected": false,
+			"source": "capsule_swc_refinement_merge_reconstructions_8",
+			"target": "capsule_neuron_reconstruction_qc_capsule_11"
+		},
+		{
+			"id": "xy-edge__data/qc-configs-capsule_neuron_reconstruction_qc_capsule_11",
 			"selected": false,
 			"source": "data/qc-configs",
-			"target": "capsule_neuron_reconstruction_qc_capsule_7"
+			"target": "capsule_neuron_reconstruction_qc_capsule_11"
 		},
 		{
-			"id": "xy-edge__capsule_neuron_reconstruction_qc_capsule_7-capsule_combine_qc_metrics_6",
-			"source": "capsule_neuron_reconstruction_qc_capsule_7",
+			"id": "xy-edge__capsule_neuron_reconstruction_qc_capsule_11-capsule_swc_refinment_10",
+			"selected": false,
+			"source": "capsule_neuron_reconstruction_qc_capsule_11",
+			"target": "capsule_swc_refinment_10"
+		},
+		{
+			"id": "xy-edge__83909dcc-1e88-4816-b247-63f6d0218eff-capsule_swc_refinment_10",
+			"selected": false,
+			"source": "83909dcc-1e88-4816-b247-63f6d0218eff",
+			"target": "capsule_swc_refinment_10"
+		},
+		{
+			"id": "xy-edge__capsule_swc_refinment_10-capsule_merge_refinement_results_9",
+			"selected": false,
+			"source": "capsule_swc_refinment_10",
+			"target": "capsule_merge_refinement_results_9"
+		},
+		{
+			"id": "xy-edge__capsule_merge_refinement_results_9-capsule_neuron_reconstruction_qc_capsule_12",
+			"selected": false,
+			"source": "capsule_merge_refinement_results_9",
+			"target": "capsule_neuron_reconstruction_qc_capsule_12"
+		},
+		{
+			"id": "xy-edge__data/qc-configs-capsule_neuron_reconstruction_qc_capsule_12",
+			"selected": false,
+			"source": "data/qc-configs",
+			"target": "capsule_neuron_reconstruction_qc_capsule_12"
+		},
+		{
+			"id": "xy-edge__capsule_merge_refinement_results_9-capsule_exaspim_swc_transform_capsule_1",
+			"selected": false,
+			"source": "capsule_merge_refinement_results_9",
+			"target": "capsule_exaspim_swc_transform_capsule_1"
+		},
+		{
+			"id": "xy-edge__capsule_neuron_reconstruction_qc_capsule_12-results",
+			"selected": false,
+			"source": "capsule_neuron_reconstruction_qc_capsule_12",
+			"target": "results"
+		},
+		{
+			"id": "xy-edge__capsule_merge_refinement_results_9-results",
+			"source": "capsule_merge_refinement_results_9",
+			"target": "results"
+		},
+		{
+			"id": "xy-edge__capsule_swc_refinement_merge_reconstructions_8-results",
+			"selected": false,
+			"source": "capsule_swc_refinement_merge_reconstructions_8",
+			"target": "results"
+		},
+		{
+			"id": "xy-edge__capsule_neuron_reconstruction_qc_capsule_11-results",
+			"source": "capsule_neuron_reconstruction_qc_capsule_11",
+			"target": "results"
+		},
+		{
+			"id": "xy-edge__capsule_neuron_reconstruction_qc_capsule_11-capsule_combine_qc_metrics_6",
+			"selected": false,
+			"source": "capsule_neuron_reconstruction_qc_capsule_11",
 			"target": "capsule_combine_qc_metrics_6"
 		}
 	],
@@ -133,8 +194,8 @@
 			},
 			"id": "capsule_exaspim_swc_transform_capsule_1",
 			"position": {
-				"x": 399.00565512722926,
-				"y": 207.8228795479445
+				"x": 69.00565512722929,
+				"y": 1.1562128812778667
 			},
 			"selected": false,
 			"type": "capsule"
@@ -151,8 +212,8 @@
 		{
 			"id": "0b22b6d4-5866-4a31-90ad-7be655a32539",
 			"position": {
-				"x": 2295.04724157372,
-				"y": -246.79082643193496
+				"x": 1341.7139082403867,
+				"y": 206.54250690139838
 			},
 			"selected": false,
 			"type": "dataset"
@@ -161,7 +222,7 @@
 			"id": "725d783a-a2df-4c64-a5d8-cdc0f35afd3a",
 			"position": {
 				"x": -313.7878611552683,
-				"y": -115.24456552967663
+				"y": -75.24456552967663
 			},
 			"selected": false,
 			"type": "dataset"
@@ -169,17 +230,17 @@
 		{
 			"id": "79bf9032-5cff-4038-b2b8-8a24fa098e3b",
 			"position": {
-				"x": -174.07425601413632,
-				"y": -271.104302099249
+				"x": -140.74092268080298,
+				"y": -284.4376354325824
 			},
-			"selected": false,
+			"selected": true,
 			"type": "dataset"
 		},
 		{
 			"id": "83909dcc-1e88-4816-b247-63f6d0218eff",
 			"position": {
-				"x": 749.2037433108844,
-				"y": 356.9190967805165
+				"x": 1172.5370766442177,
+				"y": -829.7475698861502
 			},
 			"selected": false,
 			"type": "dataset"
@@ -187,8 +248,8 @@
 		{
 			"id": "90e5a323-b4a9-441e-baea-4f9717cda04f",
 			"position": {
-				"x": 1286.7284925877566,
-				"y": -249.8213547614692
+				"x": 1123.3951592544233,
+				"y": -206.48802142813585
 			},
 			"selected": false,
 			"type": "dataset"
@@ -196,8 +257,8 @@
 		{
 			"id": "f49b1346-e9ef-4201-b49b-a70fc6d12ae9",
 			"position": {
-				"x": 1540.796198716,
-				"y": -246.85783676794418
+				"x": 1190.796198716,
+				"y": -130.1911701012775
 			},
 			"selected": false,
 			"type": "dataset"
@@ -205,8 +266,8 @@
 		{
 			"id": "ee48989d-ae51-4d6b-a520-adaf64831bc1",
 			"position": {
-				"x": 1804.1295320493336,
-				"y": -236.85783676794418
+				"x": 1234.1295320493336,
+				"y": -30.19117010127751
 			},
 			"selected": false,
 			"type": "dataset"
@@ -214,8 +275,8 @@
 		{
 			"id": "a07157ab-990e-45d8-8e4c-53ebef2b74df",
 			"position": {
-				"x": 2050.796198716,
-				"y": -246.85783676794415
+				"x": 1320.796198716,
+				"y": 73.14216323205586
 			},
 			"selected": false,
 			"type": "dataset"
@@ -223,8 +284,8 @@
 		{
 			"id": "30dd60f8-d85d-46e6-8a6d-3af4b7577f04",
 			"position": {
-				"x": 1062.105453680193,
-				"y": -248.25831385941552
+				"x": 1048.7721203468598,
+				"y": -301.59164719274884
 			},
 			"selected": false,
 			"type": "dataset"
@@ -235,8 +296,8 @@
 			},
 			"id": "capsule_neuron_reconstruction_qc_capsule_4",
 			"position": {
-				"x": 622.7172423393845,
-				"y": 699.6965491922775
+				"x": 772.7172423393844,
+				"y": 453.02988252561084
 			},
 			"selected": false,
 			"type": "capsule"
@@ -244,8 +305,8 @@
 		{
 			"id": "data/qc-configs",
 			"position": {
-				"x": 990.9567656722013,
-				"y": 478.1534148759423
+				"x": 117.62343233886793,
+				"y": -828.5132517907244
 			},
 			"selected": false,
 			"type": "pipeline"
@@ -256,10 +317,10 @@
 			},
 			"id": "capsule_neuron_reconstruction_qc_capsule_5",
 			"position": {
-				"x": 960.6815107816296,
-				"y": 713.1429905270855
+				"x": 1017.3481774482962,
+				"y": 453.14299052708566
 			},
-			"selected": true,
+			"selected": false,
 			"type": "capsule"
 		},
 		{
@@ -268,19 +329,11 @@
 			},
 			"id": "capsule_exaspim_swc_resample_3",
 			"position": {
-				"x": 395.4539069770579,
-				"y": 489.251252017953
+				"x": 175.45390697705795,
+				"y": 325.9179186846196
 			},
 			"selected": false,
 			"type": "capsule"
-		},
-		{
-			"id": "ef926cf6-ae1b-4d9b-b716-97316b2ff046",
-			"position": {
-				"x": 157.94551992593404,
-				"y": -327.65274290610296
-			},
-			"type": "dataset"
 		},
 		{
 			"data": {
@@ -288,8 +341,56 @@
 			},
 			"id": "capsule_combine_qc_metrics_6",
 			"position": {
-				"x": 955.2914525161846,
-				"y": 972.3101420522091
+				"x": 895.2914525161846,
+				"y": 752.3101420522089
+			},
+			"selected": false,
+			"type": "capsule"
+		},
+		{
+			"data": {
+				"capsule_id": "f5236f44-5506-46c6-9e82-f18b5fbd38e4"
+			},
+			"id": "capsule_exaspim_swc_packaging_2",
+			"position": {
+				"x": 547.1756644789475,
+				"y": 959.9029022849534
+			},
+			"selected": false,
+			"type": "capsule"
+		},
+		{
+			"data": {
+				"capsule_id": "fd96c849-0bf6-449c-b210-3addbd132630"
+			},
+			"id": "capsule_swc_refinement_merge_reconstructions_8",
+			"position": {
+				"x": 274.36512135400886,
+				"y": -686.9389038935125
+			},
+			"selected": false,
+			"type": "capsule"
+		},
+		{
+			"data": {
+				"capsule_id": "a06a073a-d943-4d16-92c9-dee104568d30"
+			},
+			"id": "capsule_merge_refinement_results_9",
+			"position": {
+				"x": 694.8447503614759,
+				"y": -441.219460382312
+			},
+			"selected": false,
+			"type": "capsule"
+		},
+		{
+			"data": {
+				"capsule_id": "67f566a2-a348-489f-a720-11b2536f0859"
+			},
+			"id": "capsule_swc_refinment_10",
+			"position": {
+				"x": 874.8447503614756,
+				"y": -678.9620771353506
 			},
 			"selected": false,
 			"type": "capsule"
@@ -298,31 +399,40 @@
 			"data": {
 				"capsule_id": "00a1b27a-7ad1-495a-bf51-21c137d7b094"
 			},
-			"id": "capsule_neuron_reconstruction_qc_capsule_7",
+			"id": "capsule_neuron_reconstruction_qc_capsule_11",
 			"position": {
-				"x": 1296.2963568758928,
-				"y": 705.2295911721776
+				"x": 571.0317880206754,
+				"y": -678.866151333857
 			},
 			"selected": false,
 			"type": "capsule"
 		},
 		{
 			"data": {
-				"capsule_id": "449ebf74-967d-44bb-9d03-f69c49412589"
+				"capsule_id": "00a1b27a-7ad1-495a-bf51-21c137d7b094"
 			},
-			"id": "capsule_exaspim_swc_packaging_2",
+			"id": "capsule_neuron_reconstruction_qc_capsule_12",
 			"position": {
-				"x": 407.1756644789474,
-				"y": 1073.2362356182866
+				"x": -98.48858297185777,
+				"y": 666.5231563707264
 			},
 			"selected": false,
 			"type": "capsule"
+		},
+		{
+			"id": "3a69aa68-d0d0-4440-b650-6976c931200e",
+			"position": {
+				"x": 680.5521590132083,
+				"y": -963.5096447586857
+			},
+			"selected": false,
+			"type": "dataset"
 		}
 	],
-	"timestamp": 1794255469653,
+	"timestamp": 1794514153857,
 	"viewport": {
-		"x": 38.485855508672785,
-		"y": 196.73257584363046,
-		"zoom": 0.37499999999999994
+		"x": 206.35784044798663,
+		"y": 363.56671170205755,
+		"zoom": 0.3
 	}
 }
