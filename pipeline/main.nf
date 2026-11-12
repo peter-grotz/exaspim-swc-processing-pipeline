@@ -1,5 +1,5 @@
 #!/usr/bin/env nextflow
-// hash:sha256:a056964d68e63856b2a6068f54b9363c53356b04fb2f8c62db9d129ff35bfe3c
+// hash:sha256:84b53b6403278ecaaef211fe6da14e56793871e2f5b5623720b80cc4048bcf0d
 
 // capsule - SWC Refinement - Merge reconstructions
 process capsule_swc_refinement_merge_reconstructions_8 {
@@ -91,7 +91,7 @@ process capsule_neuron_reconstruction_qc_capsule_11 {
 	else
 		git -c credential.helper= clone "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-1223705.git" capsule-repo
 	fi
-	git -C capsule-repo checkout 712468e95168849faf3d4296965b1e5c3eca3814 --quiet
+	git -C capsule-repo checkout 5b79c9166ace8cf6b5783d72acece9f7e4772a0f --quiet
 	mv capsule-repo/code capsule/code && ln -s \$PWD/capsule/code /code
 	rm -rf capsule-repo
 
@@ -300,7 +300,7 @@ process capsule_neuron_reconstruction_qc_capsule_12 {
 	else
 		git -c credential.helper= clone "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-1223705.git" capsule-repo
 	fi
-	git -C capsule-repo checkout 712468e95168849faf3d4296965b1e5c3eca3814 --quiet
+	git -C capsule-repo checkout 5b79c9166ace8cf6b5783d72acece9f7e4772a0f --quiet
 	mv capsule-repo/code capsule/code && ln -s \$PWD/capsule/code /code
 	rm -rf capsule-repo
 
@@ -401,7 +401,7 @@ process capsule_neuron_reconstruction_qc_capsule_4 {
 	else
 		git -c credential.helper= clone "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-1223705.git" capsule-repo
 	fi
-	git -C capsule-repo checkout 712468e95168849faf3d4296965b1e5c3eca3814 --quiet
+	git -C capsule-repo checkout 5b79c9166ace8cf6b5783d72acece9f7e4772a0f --quiet
 	mv capsule-repo/code capsule/code && ln -s \$PWD/capsule/code /code
 	rm -rf capsule-repo
 
@@ -451,7 +451,7 @@ process capsule_neuron_reconstruction_qc_capsule_5 {
 	else
 		git -c credential.helper= clone "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-1223705.git" capsule-repo
 	fi
-	git -C capsule-repo checkout 712468e95168849faf3d4296965b1e5c3eca3814 --quiet
+	git -C capsule-repo checkout 5b79c9166ace8cf6b5783d72acece9f7e4772a0f --quiet
 	mv capsule-repo/code capsule/code && ln -s \$PWD/capsule/code /code
 	rm -rf capsule-repo
 
@@ -515,8 +515,8 @@ process capsule_combine_qc_metrics_6 {
 
 // capsule - exaspim-swc-packaging
 process capsule_exaspim_swc_packaging_2 {
-	tag 'capsule-9549814'
-	container "$REGISTRY_HOST/capsule/f5236f44-5506-46c6-9e82-f18b5fbd38e4:0afdbc5c9ac53df3959408d554dc5cc0"
+	tag 'capsule-9464795'
+	container "$REGISTRY_HOST/capsule/449ebf74-967d-44bb-9d03-f69c49412589:a4cb26b156c8b2e64f1d6b9e13b27711"
 
 	cpus 1
 	memory '7.5 GB'
@@ -535,7 +535,7 @@ process capsule_exaspim_swc_packaging_2 {
 	#!/usr/bin/env bash
 	set -e
 
-	export CO_CAPSULE_ID=f5236f44-5506-46c6-9e82-f18b5fbd38e4
+	export CO_CAPSULE_ID=449ebf74-967d-44bb-9d03-f69c49412589
 	export CO_CPUS=1
 	export CO_MEMORY=8053063680
 
@@ -546,11 +546,11 @@ process capsule_exaspim_swc_packaging_2 {
 
 	echo "[${task.tag}] cloning git repo..."
 	if [[ "\$(printf '%s\n' "2.20.0" "\$(git version | awk '{print \$3}')" | sort -V | head -n1)" = "2.20.0" ]]; then
-		git -c credential.helper= clone --filter=tree:0 "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-9549814.git" capsule-repo
+		git -c credential.helper= clone --filter=tree:0 "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-9464795.git" capsule-repo
 	else
-		git -c credential.helper= clone "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-9549814.git" capsule-repo
+		git -c credential.helper= clone "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-9464795.git" capsule-repo
 	fi
-	git -C capsule-repo checkout 0e35a7effc9f4efa2a7744c6a64f4bbb5b0ad37b --quiet
+	git -C capsule-repo checkout 05cf56b3d800a6159c9764702ea25fd4d831ed18 --quiet
 	mv capsule-repo/code capsule/code && ln -s \$PWD/capsule/code /code
 	rm -rf capsule-repo
 
