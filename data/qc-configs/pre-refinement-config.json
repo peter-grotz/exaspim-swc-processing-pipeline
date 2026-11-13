@@ -1,0 +1,73 @@
+{
+    "input_dir": "/data/merged",
+    "qc_output_dir": "/results/pre-refinement-qc",
+    "swc_output_dir": "/results/swcs",
+    "glob": "**/*.swc",
+    "space": "image_space",
+    "morphology_kind": "merged",
+    "policy_name": "merged_prepipeline_v1",
+    "metrics": [
+        "single_root_node",
+        "soma_first_node",
+        "single_connected_component",
+        "node_identity_types",
+        "branch_max_degree",
+        "edge_length",
+        "soma_child_distance",
+        "axon_origination",
+        "apical_origination",
+        "compartment_transitions",
+        "root_near_detected_soma",
+        "filename_format"
+    ],
+    "thresholds": {
+        "edge_length": {
+            "max_length_um": {
+                "lo": 0,
+                "hi": 1000.0
+            }
+        },
+        "soma_child_distance": {
+            "max_soma_child_to_soma_um": 100.0
+        },
+        "axon_origination": {
+            "max_axon_origin_to_soma_um": 75.0
+        },
+        "branch_max_degree": {
+            "max_children": 2
+        },
+        "apical_origination": {
+            "max_origins": 1
+        },
+        "node_identity_types": {
+            "allowed_types": [
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        "root_near_detected_soma": {
+            "soma_radius_um": {
+                "lo": 35.0,
+                "hi": 50.0
+            }
+        },
+        "filename_format": {
+            "name_format": "AIND"
+        }
+    },
+    "blocking_statuses": [
+        "fail",
+        "error"
+    ],
+    "neuroglancer": {
+        "s3_prefix": "s3://aind-scratch-data/cameron.arshadi/neuron-qc-neuroglancer-test",
+        "coordinate_scale_um": [
+            1,
+            1,
+            1
+        ]
+    },
+    "asset_skeleton": "raw_reconstructions/reconstructions.precomputed"
+}
